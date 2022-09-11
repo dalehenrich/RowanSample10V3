@@ -2,7 +2,7 @@ RwLoadComponent {
 	#name : 'Core',
 	#projectNames : [ ],
 	#componentNames : [
-		'tests/Tests'
+		'mytests/Tests'
 	],
 	#packageNames : [
 		'RowanSample10V3-Core'
