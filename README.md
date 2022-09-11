@@ -1,11 +1,11 @@
-# RowanSample10V3 - spec_0003
-Start with spec_0001; part of linear required project chain; RowanSample9 requires RowanSample10; RowanSample10 requires RowanSample11; RowanSample11 requires RowanSample12; class hierarchy runs Object->RowanSample12Class1>RowanSample11Class1>RowanSample10Class1>RowanSample9Class1
+# RowanSample10V3 - spec_0004
+Start with spec_0003; part of recursive required project chain; RowanSample9 requires RowanSample10; RowanSample10 requires RowanSample11; RowanSample11 requires RowanSample12; RowanSamplle12 requires RowanSample9; class hierarchy runs RowanSample9Class2->RowanSample12Class1>RowanSample11Class1>RowanSample10Class1>RowanSample9Class1
 ```
 RwLoadSpecificationV2 {
-	#specName : 'spec_0003',
+	#specName : 'spec_0004',
 	#projectName : 'RowanSample10V3',
 	#gitUrl : 'git@github.com:dalehenrich/RowanSample10V3.git',
-	#revision : 'spec_0003',
+	#revision : 'spec_0004',
 	#projectSpecFile : 'rowan/project.ston',
 	#componentNames : [
 		'Core'
@@ -16,20 +16,20 @@ RwLoadSpecificationV2 {
 	#platformProperties : {
 		'gemstone' : {
 			'allusers' : {
-				#defaultSymbolDictName : 'RowanSample9_1'
+				#defaultSymbolDictName : 'RowanSample9_2'
 			}
 		}
 	},
-	#comment : 'Start with spec_0001; part of linear required project chain; RowanSample9 requires RowanSample10; RowanSample10 requires RowanSample11; RowanSample11 requires RowanSample12; class hierarchy runs Object->RowanSample12Class1>RowanSample11Class1>RowanSample10Class1>RowanSample9Class1'
+	#comment : 'Start with spec_0003; part of recursive required project chain; RowanSample9 requires RowanSample10; RowanSample10 requires RowanSample11; RowanSample11 requires RowanSample12; RowanSamplle12 requires RowanSample9; class hierarchy runs RowanSample9Class2->RowanSample12Class1>RowanSample11Class1>RowanSample10Class1>RowanSample9Class1'
 }
 
 RwTestProjectLibraryIndexCard {
-	#name : 'index_0003',
-	#title : 'Start with spec_0001; part of linear required project chain; RowanSample9 requires RowanSample10; RowanSample10 requires RowanSample11; RowanSample11 requires RowanSample12; class hierarchy runs Object->RowanSample12Class1>RowanSample11Class1>RowanSample10Class1>RowanSample9Class1',
-	#specName : 'spec_0003',
-	#index : 3,
-	#derivedFrom : 'spec_0001',
-	#comment : 'Duplicate of spec_0001 with only a change in superclass name',
+	#name : 'index_0004',
+	#title : 'Start with spec_0003; part of recursive required project chain; RowanSample9 requires RowanSample10; RowanSample10 requires RowanSample11; RowanSample11 requires RowanSample12; RowanSamplle12 requires RowanSample9; class hierarchy runs RowanSample9Class2->RowanSample12Class1>RowanSample11Class1>RowanSample10Class1>RowanSample9Class1',
+	#specName : 'spec_0004',
+	#index : 4,
+	#derivedFrom : 'spec_0003',
+	#comment : 'recursive required project chain',
 	#rowanIssues : [
 		701
 	],
